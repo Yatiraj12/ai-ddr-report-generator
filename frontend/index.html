@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI DDR Report Generator</title>
+
+<link rel="stylesheet" href="/frontend/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏢 AI DDR Report Generator</h1>
+<p class="subtitle">
+Upload inspection and thermal reports to generate a structured diagnostic report
+</p>
+
+<div class="upload-card">
+
+<div class="file-input">
+<label>Inspection Report (PDF)</label>
+<input type="file" id="inspectionFile" accept=".pdf">
+</div>
+
+<div class="file-input">
+<label>Thermal Report (PDF)</label>
+<input type="file" id="thermalFile" accept=".pdf">
+</div>
+
+<button onclick="generateDDR()" class="generate-btn">
+Generate DDR Report
+</button>
+
+</div>
+
+<div id="loading" class="loading hidden">
+⏳ Generating report...
+</div>
+
+<div id="reportSection" class="report-section hidden">
+
+<h2>Generated Report</h2>
+
+<pre id="reportOutput"></pre>
+
+</div>
+
+</div>
+
+<script src="/frontend/script.js"></script>
+
+</body>
+</html>
