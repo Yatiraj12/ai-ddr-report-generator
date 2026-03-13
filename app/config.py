@@ -18,7 +18,7 @@ class Settings:
     # -----------------------------
     # LLM Configuration
     # -----------------------------
-    LLM_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+    LLM_MODEL = "qwen/qwen3-32b"
 
     # -----------------------------
     # Input Directories
